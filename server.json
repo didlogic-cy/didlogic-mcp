@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.didlogic/mcp",
+  "title": "didlogic",
+  "description": "Your didlogic account in AI assistants: numbers, SIP accounts, routing, SMS, calls and billing.",
+  "version": "4.5.2",
+  "websiteUrl": "https://mcp.didlogic.com",
+  "repository": {
+    "url": "https://github.com/didlogic-cy/didlogic-mcp",
+    "source": "github",
+    "id": "1420723264"
+  },
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/didlogic-cy/didlogic-mcp/main/icon.png",
+      "mimeType": "image/png",
+      "sizes": ["256x256"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.didlogic.com/mcp"
+    }
+  ]
+}
