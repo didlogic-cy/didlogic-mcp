@@ -3,6 +3,11 @@
 Every release of the didlogic MCP server. Versions match the server version
 reported at <https://mcp.didlogic.com/health>.
 
+## [4.7.2] - 2026-10-28
+
+- Links to the server now show a preview card when shared in chats and
+  social networks.
+
 ## [4.7.1] - 2026-10-28
 
 - Some operations are now available only on the main endpoint.

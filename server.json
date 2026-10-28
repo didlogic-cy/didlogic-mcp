@@ -3,7 +3,7 @@
   "name": "com.didlogic/mcp",
   "title": "didlogic",
   "description": "Your didlogic account in AI assistants: numbers, SIP accounts, routing, SMS, calls and billing.",
-  "version": "4.7.1",
+  "version": "4.7.2",
   "websiteUrl": "https://mcp.didlogic.com",
   "repository": {
     "url": "https://github.com/didlogic-cy/didlogic-mcp",
