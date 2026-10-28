@@ -69,6 +69,16 @@ Operations that take a file, such as uploading a KYC document, accept it as:
 }
 ```
 
+## Explicit mode
+
+`https://mcp.didlogic.com/mcp/explicit` serves the same API as one tool per
+operation instead of the three tools above, for assistants that need each
+operation as a tool of its own. Each tool takes the operation's arguments
+directly and says whether it only reads, may change or remove something, and
+whether it reaches a phone number outside your account. Every operation is
+listed; one your account cannot use is refused when called. Sign-in and API
+keys work the same on both endpoints.
+
 ## Errors
 
 A refused or failed call returns a message that says what happened and what

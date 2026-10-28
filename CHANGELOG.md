@@ -3,6 +3,11 @@
 Every release of the didlogic MCP server. Versions match the server version
 reported at <https://mcp.didlogic.com/health>.
 
+## [4.7.0] - 2026-10-28
+
+- Added an explicit mode at `https://mcp.didlogic.com/mcp/explicit` for
+  assistants that need every API operation as its own tool.
+
 ## [4.6.2] - 2026-10-27
 
 - Fixed bugs and improved reliability.
