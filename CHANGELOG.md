@@ -3,6 +3,11 @@
 Every release of the didlogic MCP server. Versions match the server version
 reported at <https://mcp.didlogic.com/health>.
 
+## [4.7.3] - 2026-10-29
+
+- The setup page now starts with OAuth sign-in, the quickest way to connect
+  your assistant.
+
 ## [4.7.2] - 2026-10-28
 
 - Links to the server now show a preview card when shared in chats and
