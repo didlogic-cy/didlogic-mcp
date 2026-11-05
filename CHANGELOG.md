@@ -3,6 +3,12 @@
 Every release of the didlogic MCP server. Versions match the server version
 reported at <https://mcp.didlogic.com/health>.
 
+## [4.7.4] - 2026-11-05
+
+- Code your assistant runs can now use classes, `match`, `str.format`, more standard
+  modules and the current date and time.
+- A refused call always ends the whole run. Code can no longer catch one and carry on.
+
 ## [4.7.3] - 2026-10-29
 
 - The setup page now starts with OAuth sign-in, the quickest way to connect
