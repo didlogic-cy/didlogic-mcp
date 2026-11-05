@@ -3,6 +3,11 @@
 Every release of the didlogic MCP server. Versions match the server version
 reported at <https://mcp.didlogic.com/health>.
 
+## [4.7.5] - 2026-11-05
+
+- After a call fails, the rest of the run stops too, even if the code catches the
+  failure.
+
 ## [4.7.4] - 2026-11-05
 
 - Code your assistant runs can now use classes, `match`, `str.format`, more standard
