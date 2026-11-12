@@ -76,7 +76,8 @@ operation instead of the three tools above, for assistants that need each
 operation as a tool of its own. Each tool is named for what it does, such as
 `send_sms_message` or `buy_number`, carries a readable title, takes the
 operation's arguments directly, and says whether it only reads, may change or
-remove something, and whether it reaches a phone number outside your account.
+remove something, and whether it reaches a phone number or address outside
+your account.
 Every tool it offers is listed; one your account cannot use is refused when
 called. KYC documents, creating and archiving identities, creating or changing
 SIP accounts, HLR lookups and risk checks are offered only on the main

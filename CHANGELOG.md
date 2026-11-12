@@ -3,6 +3,10 @@
 Every release of the didlogic MCP server. Versions match the server version
 reported at <https://mcp.didlogic.com/health>.
 
+## [4.9.1] - 2026-11-12
+
+- Fixed bugs and improved reliability.
+
 ## [4.9.0] - 2026-11-12
 
 - Every tool now has a name that says what it does, such as `send_sms_message`,
