@@ -20,7 +20,7 @@ Returns the exact arguments of chosen operations.
 
 | Argument | Type | Description |
 |----------|------|-------------|
-| `tools` | array of strings | Operation names from `search`, e.g. `["balance_show"]` |
+| `tools` | array of strings | Operation names from `search`, e.g. `["get_account_balance"]` |
 
 An argument an operation does not declare is refused rather than ignored, so
 a filter is never silently dropped.
@@ -42,7 +42,7 @@ without sending every page back.
 spent = 0
 page = 1
 while True:
-    reply = await call_tool("calls_show", {"from": "2026-10-01", "to": "2026-10-31", "page": page})
+    reply = await call_tool("list_call_records", {"from": "2026-10-01", "to": "2026-10-31", "page": page})
     spent += sum(call["amount"] for call in reply["calls"])
     if page >= reply["pagination"]["total_pages"]:
         break
@@ -73,12 +73,14 @@ Operations that take a file, such as uploading a KYC document, accept it as:
 
 `https://mcp.didlogic.com/mcp/explicit` serves the API as one tool per
 operation instead of the three tools above, for assistants that need each
-operation as a tool of its own. Each tool takes the operation's arguments
-directly and says whether it only reads, may change or remove something, and
-whether it reaches a phone number outside your account. Every tool it offers
-is listed; one your account cannot use is refused when called. Uploading
-documents, creating or changing SIP accounts, HLR lookups and risk checks are
-offered only on the main endpoint. Sign-in and API keys work the same on both
+operation as a tool of its own. Each tool is named for what it does, such as
+`send_sms_message` or `buy_number`, carries a readable title, takes the
+operation's arguments directly, and says whether it only reads, may change or
+remove something, and whether it reaches a phone number outside your account.
+Every tool it offers is listed; one your account cannot use is refused when
+called. KYC documents, creating and archiving identities, creating or changing
+SIP accounts, HLR lookups and risk checks are offered only on the main
+endpoint. Sign-in and API keys work the same on both
 endpoints.
 
 ## Errors

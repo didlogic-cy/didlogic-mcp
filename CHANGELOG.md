@@ -3,6 +3,14 @@
 Every release of the didlogic MCP server. Versions match the server version
 reported at <https://mcp.didlogic.com/health>.
 
+## [4.9.0] - 2026-11-12
+
+- Every tool now has a name that says what it does, such as `send_sms_message`,
+  `buy_number` or `list_call_records`, and a readable title. Tools called by
+  their old names are no longer found; refresh the tool list.
+- On the explicit endpoint, KYC documents, creating and archiving identities,
+  and risk check lists are now offered only on the main endpoint.
+
 ## [4.8.0] - 2026-11-10
 
 - Fixed bugs and improved reliability.
