@@ -3,6 +3,10 @@
 Every release of the didlogic MCP server. Versions match the server version
 reported at <https://mcp.didlogic.com/health>.
 
+## [4.10.3] - 2026-11-26
+
+- Fixed bugs and improved reliability.
+
 ## [4.10.2] - 2026-11-26
 
 - Fixed bugs and improved reliability.
